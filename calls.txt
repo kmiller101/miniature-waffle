@@ -1,6 +1,0 @@
-﻿http://api.census.gov/data/2012/acs5?key=c4c2a4ceccbe416e7c495b01fac47e8f9889f315&get=B02001_002E&for=tract:*&in=state:26+county:077
---http://www.socialexplorer.com/data/ACS2012_5yr/metadata/?ds=ACS12_5yr&var=B02001002
-
-
-Move column the_geom to position 13
-	Create column TEST at index 7 by fetching URLs based on column blkgrpce using expression grel:"http://api.census.gov/data/2012/acs5?key=c4c2a4ceccbe416e7c495b01fac47e8f9889f315&get=B02001_002E&for=block+group:"+cells["blkgrpce"].value+"&in=state:26+county:"+cells["countyfp"].value+"+tract:"+cells["tractce"].value"
